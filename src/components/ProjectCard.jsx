@@ -1,30 +1,35 @@
+"use client"
+
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 export default function ProjectCard({ project }) {
     return (
-        <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
-
-            {/* Project Image */}
-            <div className="relative h-40">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ y: -6 }}
+            className="bg-gray-800 rounded-xl overflow-hidden shadow-lg"
+        >
+            <div className="relative h-40 w-full overflow-hidden">
                 <Image
-                    src={project.image}
+                    src={project.image}   
                     alt={project.title}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
             </div>
 
-            {/* Content */}
+
             <div className="p-5">
-                <h3 className="text-xl font-semibold">
-                    {project.title}
-                </h3>
+                <h3 className="text-xl font-semibold">{project.title}</h3>
 
                 <p className="text-gray-400 text-sm mt-2">
                     {project.description}
                 </p>
 
-                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mt-4">
                     {project.tech.map((item, index) => (
                         <span
@@ -36,13 +41,12 @@ export default function ProjectCard({ project }) {
                     ))}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-4 mt-5">
                     {project.live && (
                         <a
                             href={project.live}
                             target="_blank"
-                            className="text-blue-400 hover:underline"
+                            className="text-cyan-400 hover:underline"
                         >
                             Live Demo
                         </a>
@@ -57,6 +61,6 @@ export default function ProjectCard({ project }) {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

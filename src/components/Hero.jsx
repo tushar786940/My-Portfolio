@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export default function Hero() {
   return (
@@ -13,15 +16,19 @@ export default function Hero() {
         className="object-cover object-center"
       />
 
-      {/* Dark Overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-[#0B0F1A]/70"></div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-2xl">
-
+      {/* Animated Content */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative z-10 max-w-2xl"
+      >
         <h1 className="text-4xl md:text-6xl font-extrabold text-white">
           Hi, I’m{" "}
-          <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Tushar
           </span>
         </h1>
@@ -33,24 +40,26 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
-
-          <a
+          <motion.a
             href="/projects"
-            className="px-6 py-3 rounded-lg bg-cyan-500 text-black font-medium hover:bg-cyan-600 transition"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-3 rounded-lg bg-cyan-500 text-black font-medium"
           >
             View Projects
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="/resume.pdf"
             target="_blank"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="px-6 py-3 rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-black transition"
           >
             Resume
-          </a>
-
+          </motion.a>
         </div>
-      </div>
+      </motion.div>
 
     </section>
   )

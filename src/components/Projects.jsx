@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import ProjectCard from "./ProjectCard"
 import { projects } from "@/data/projects"
+import { motion } from "framer-motion"
 
 export default function Projects() {
     return (
@@ -10,7 +13,7 @@ export default function Projects() {
         >
             {/* Background Image */}
             <Image
-                src="/image.png"
+                src="/project.png"
                 alt="Projects background"
                 fill
                 priority
@@ -22,14 +25,27 @@ export default function Projects() {
 
             {/* Content */}
             <div className="relative z-10 max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-center">
+                <motion.h2
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-3xl font-bold text-center"
+                >
                     Projects
-                </h2>
+                </motion.h2>
 
-                <p className="text-gray-400 text-center mt-3 max-w-xl mx-auto">
+
+                <motion.p
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.15 }}
+                    className="text-gray-400 text-center mt-3 max-w-xl mx-auto"
+                >
                     Here are some real-world projects I’ve built to sharpen my
                     full-stack and problem-solving skills.
-                </p>
+                </motion.p>
 
                 {/* Project Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">

@@ -16,14 +16,13 @@ export const projects = [
         live: "https://skill-bridge-one-khaki.vercel.app/"
     },
     {
-        title: "ORVBA",
-        description: "On-road vehicle breakdown assistance platform...",
+        title: "Goodle Gemni Clone",
+        description: "A clone of Google Gemini's landing page, built with React and Tailwind CSS, featuring responsive design and interactive elements.",
         tech: [
-            "Node.js",
-            "Firebase",
-            "JavaScript"
+            "React",
+            "Tailwind CSS",
         ],
-        image: "/projects/orvba.jpeg",
+        image: "/projects/gemini-clone.png",
         github: "https://github.com/...",
         live: "https://..."
     }
