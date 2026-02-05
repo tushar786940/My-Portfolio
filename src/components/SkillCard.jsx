@@ -11,13 +11,13 @@ export default function SkillCard({ title, items, icon: Icon }) {
             whileHover={{ y: -8, scale: 1.02 }}
             onHoverStart={() => setIsHovered(true)}
             onHoverEnd={() => setIsHovered(false)}
-            className="relative bg-gradient-to-br from-gray-800/80 to-gray-900/80 rounded-2xl p-6 border border-gray-700/50
+            className="relative bg-linear-to-br from-gray-800/80 to-gray-900/80 rounded-2xl p-6 border border-gray-700/50
                  hover:border-cyan-400/50 transition-all duration-300 group overflow-hidden backdrop-blur-sm
                  hover:shadow-2xl hover:shadow-cyan-500/20"
         >
             {/* Animated Gradient Glow */}
             <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-purple-500/10 to-pink-500/10 opacity-0
+                className="absolute inset-0 bg-linear-to-br from-cyan-400/10 via-purple-500/10 to-pink-500/10 opacity-0
                       group-hover:opacity-100 transition-opacity duration-500"
                 animate={
                     isHovered
@@ -34,7 +34,7 @@ export default function SkillCard({ title, items, icon: Icon }) {
             />
 
             {/* Corner Accent */}
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-linear-to-br from-cyan-500/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
             {/* Animated Border */}
             <motion.div
@@ -56,7 +56,7 @@ export default function SkillCard({ title, items, icon: Icon }) {
                     <motion.div
                         whileHover={{ rotate: 360, scale: 1.2 }}
                         transition={{ duration: 0.6 }}
-                        className="p-2.5 rounded-xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 border border-cyan-500/30"
+                        className="p-2.5 rounded-xl bg-linear-to-br from-cyan-500/20 to-purple-500/20 border border-cyan-500/30"
                     >
                         <Icon className="text-cyan-400" size={24} />
                     </motion.div>
@@ -70,7 +70,7 @@ export default function SkillCard({ title, items, icon: Icon }) {
                         initial={{ scaleX: 0 }}
                         animate={{ scaleX: isHovered ? 1 : 0 }}
                         transition={{ duration: 0.3 }}
-                        className="h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full mt-1 origin-left"
+                        className="h-0.5 bg-linear-to-r from-cyan-400 to-purple-500 rounded-full mt-1 origin-left"
                     />
                 </div>
             </div>
@@ -107,13 +107,13 @@ export default function SkillCard({ title, items, icon: Icon }) {
                             boxShadow: "0 4px 20px rgba(6,182,212,0.3)",
                         }}
                         whileTap={{ scale: 0.95 }}
-                        className="relative text-sm font-medium bg-gradient-to-br from-gray-700 to-gray-800 
+                        className="relative text-sm font-medium bg-linear-to-br from-gray-700 to-gray-800 
                                    px-4 py-2 rounded-full text-gray-300 hover:text-white
                                    border border-gray-600 hover:border-cyan-500/50
                                    transition-all duration-300 overflow-hidden"
                     >
                         {/* Pill Glow */}
-                        <motion.div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 opacity-0 hover:opacity-100 transition-opacity" />
+                        <motion.div className="absolute inset-0 bg-linear-to-r from-cyan-500/20 to-purple-500/20 opacity-0 hover:opacity-100 transition-opacity" />
 
                         {/* FIXED TAG HERE ✅ */}
                         <span className="relative z-10 flex items-center gap-1.5">
@@ -129,7 +129,7 @@ export default function SkillCard({ title, items, icon: Icon }) {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: isHovered ? 1 : 0 }}
                 transition={{ duration: 0.5 }}
-                className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-b-2xl origin-left"
+                className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-b-2xl origin-left"
             />
         </motion.div>
     )

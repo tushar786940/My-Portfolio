@@ -35,7 +35,7 @@ export default function Skills() {
             />
 
             {/* Enhanced Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/75 to-black/85"></div>
+            <div className="absolute inset-0 bg-linear-to-b from-black/85 via-black/75 to-black/85"></div>
 
             {/* Animated Gradient Orbs */}
             <motion.div
@@ -61,7 +61,7 @@ export default function Skills() {
                     ease: "easeInOut",
                     delay: 2
                 }}
-                className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-purple-500/30 rounded-full blur-3xl"
+                className="absolute -bottom-40 -right-40 w-125 h-125 bg-purple-500/30 rounded-full blur-3xl"
             />
             <motion.div
                 animate={{
@@ -74,7 +74,7 @@ export default function Skills() {
                     ease: "easeInOut",
                     delay: 4
                 }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pink-500/20 rounded-full blur-3xl"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-pink-500/20 rounded-full blur-3xl"
             />
 
             {/* Decorative Grid Pattern */}
@@ -151,7 +151,7 @@ export default function Skills() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-center"
                 >
-                    <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                         Skills & Expertise
                     </span>
                 </motion.h2>
@@ -173,7 +173,7 @@ export default function Skills() {
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    className="w-24 h-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 mx-auto mt-6 rounded-full"
+                    className="w-24 h-1 bg-linear-to-r from-cyan-500 via-purple-500 to-pink-500 mx-auto mt-6 rounded-full"
                 />
 
                 {/* Skills Grid with Stagger Animation */}
@@ -204,7 +204,7 @@ export default function Skills() {
                     className="flex flex-wrap justify-center gap-12 mt-16 pt-12 border-t border-gray-700/50"
                 >
                     {[
-                        { label: "Technologies", value: "20+", icon: "⚡" },
+                        { label: "Technologies", value: "15+", icon: "⚡" },
                         { label: "Years Experience", value: "2+", icon: "📅" },
                         { label: "Projects Built", value: "15+", icon: "🚀" }
                     ].map((stat, index) => (
@@ -219,7 +219,7 @@ export default function Skills() {
                             <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
                                 {stat.icon}
                             </div>
-                            <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                            <div className="text-3xl font-bold bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                                 {stat.value}
                             </div>
                             <div className="text-gray-500 text-sm mt-1 uppercase tracking-wider">
