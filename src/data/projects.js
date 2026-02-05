@@ -11,7 +11,7 @@ export const projects = [
             "Tailwind CSS",
             "JWT Auth"
         ],
-        image: "/projects/skillbridge.png",
+        image: "/projects/skillbridge2.png",
         github: "https://github.com/tushar786940/SkillBridge.git",
         live: "https://skill-bridge-one-khaki.vercel.app/"
     },
@@ -23,7 +23,7 @@ export const projects = [
             "Tailwind CSS",
         ],
         image: "/projects/gemini-clone.png",
-        github: "https://github.com/...",
-        live: "https://..."
+        github: "https://github.com/tushar786940/Gemini-Clone.git",
+        live: "https://gemini-clone-delta-nine.vercel.app/"
     }
 ]
