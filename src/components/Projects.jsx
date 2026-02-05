@@ -21,7 +21,7 @@ export default function Projects() {
             />
 
             {/* Enhanced Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80"></div>
+            <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/70 to-black/80"></div>
 
             {/* Animated Gradient Orbs */}
             <motion.div
@@ -116,7 +116,7 @@ export default function Projects() {
                     transition={{ duration: 0.6 }}
                     className="text-4xl md:text-5xl lg:text-6xl font-bold text-center"
                 >
-                    <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                         Featured Projects
                     </span>
                 </motion.h2>
@@ -139,7 +139,7 @@ export default function Projects() {
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto mt-6 rounded-full"
+                    className="w-24 h-1 bg-linear-to-r from-cyan-500 to-purple-500 mx-auto mt-6 rounded-full"
                 />
 
                 {/* Stats Bar */}
@@ -163,7 +163,7 @@ export default function Projects() {
                             transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                             className="text-center"
                         >
-                            <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                            <div className="text-3xl font-bold bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                                 {stat.value}
                             </div>
                             <div className="text-gray-500 text-sm mt-1 uppercase tracking-wider">
@@ -217,7 +217,7 @@ export default function Projects() {
                             </svg>
                         </span>
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20"
+                            className="absolute inset-0 bg-linear-to-r from-cyan-500/20 to-purple-500/20"
                             initial={{ x: "-100%" }}
                             whileHover={{ x: 0 }}
                             transition={{ duration: 0.3 }}
