@@ -11,7 +11,7 @@ export const projects = [
             "Tailwind CSS",
             "JWT Auth"
         ],
-        image: "/projects/skillbridge2.png",
+        image: "/projects/skillbridge3.png",
         github: "https://github.com/tushar786940/SkillBridge.git",
         live: "https://skill-bridge-one-khaki.vercel.app/"
     },
