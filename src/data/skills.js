@@ -16,7 +16,7 @@ export const skills = [
     {
         category: "Backend",
         icon: Server,
-        items: ["Node.js", "Express", "Firebase", "REST APIs"]
+        items: ["Node.js", "Express", "Flask", "REST APIs"]
     },
     {
         category: "Database",

@@ -16,7 +16,7 @@ export const projects = [
         live: "https://skill-bridge-one-khaki.vercel.app/"
     },
     {
-        title: "Goodle Gemni Clone",
+        title: "Google Gemini Clone",
         description: "A clone of Google Gemini's landing page, built with React and Tailwind CSS, featuring responsive design and interactive elements.",
         tech: [
             "React",

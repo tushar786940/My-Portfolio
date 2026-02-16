@@ -12,18 +12,18 @@ export default function Navbar() {
     useMotionValueEvent(scrollY, "change", (latest) => {  // latest → current scroll value
         const previous = scrollY.getPrevious() // previous → last scroll value
 
-        if (latest > previous && latest > 80) {
-            setHidden(true) // Scrolling Down
-        } else {
-            setHidden(false) // Scrolling Up
-        }
+        // Navbar hiding control 
+        // if (latest > previous && latest > 80) {
+        //     setHidden(true) // Scrolling Down
+        // } else {
+        //     setHidden(false) // Scrolling Up
+        // }
     })
 
     const navLinks = [
         {href:"#home", label:"Home", color:"purple"},
         { href: "#projects", label: "Projects", color: "cyan" },
-        { href: "#skills", label: "Skills", color: "purple" },
-        // { href: "#contact", label: "Contact", color: "cyan" }
+        { href: "#skills", label: "Skills", color: "purple" }
     ]
 
     return (
@@ -62,8 +62,7 @@ export default function Navbar() {
             <div className="relative max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
                 {/* Logo with Enhanced Design */}
-                <motion.a
-                    href="/"
+                <motion.a                    
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="group relative"

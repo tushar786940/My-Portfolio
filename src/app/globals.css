@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+
 /* ---------------- ROOT VARIABLES ---------------- */
 :root {
   /* Base theme colors */
@@ -7,8 +16,10 @@
   --foreground: #171717;
 
   /* Neon brand colors (MATCH HERO) */
-  --primary: #22d3ee;   /* cyan-400 */
-  --secondary: #a855f7; /* purple-500 */
+  --primary: #22d3ee;
+  /* cyan-400 */
+  --secondary: #a855f7;
+  /* purple-500 */
 }
 
 /* ---------------- TAILWIND THEME BRIDGE ---------------- */
