@@ -9,7 +9,7 @@ export default function Hero() {
 
       {/* Background Image */}
       <Image
-        src="/Lambo.png"
+        src="/hero.png"
         alt="Code background"
         fill
         priority
