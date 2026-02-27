@@ -17,7 +17,7 @@ export default function Hero() {
       />
 
       {/* Enhanced Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F1A]/80 via-[#0B0F1A]/70 to-[#0B0F1A]/90"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-[#0B0F1A]/80 via-[#0B0F1A]/70 to-[#0B0F1A]/90"></div>
 
       {/* Animated Gradient Orbs */}
       <motion.div
@@ -86,7 +86,7 @@ export default function Hero() {
               repeat: Infinity,
               ease: "linear"
             }}
-            className="inline-block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-[length:200%_auto]"
+            className="inline-block bg-linear-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-size-[200%_auto]"
           >
             Tushar
           </motion.span>
@@ -138,7 +138,7 @@ export default function Hero() {
             href="#projects"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(6, 182, 212, 0.5)" }}
             whileTap={{ scale: 0.95 }}
-            className="group relative px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-black font-semibold overflow-hidden"
+            className="group relative px-8 py-4 rounded-xl bg-linear-to-r from-cyan-500 to-cyan-600 text-black font-semibold overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
               View Projects
@@ -147,7 +147,7 @@ export default function Hero() {
               </svg>
             </span>
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-500"
+              className="absolute inset-0 bg-linear-to-r from-cyan-400 to-cyan-500"
               initial={{ x: "-100%" }}
               whileHover={{ x: 0 }}
               transition={{ duration: 0.3 }}

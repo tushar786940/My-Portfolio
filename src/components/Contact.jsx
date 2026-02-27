@@ -269,6 +269,23 @@ export default function Contact() {
           </a>
         </motion.div>
 
+        {/* Phone Number */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+          className="mt-3 text-gray-500 text-sm"
+        >
+          or call me at{" "}
+          <a
+            href="tel:+YOUR_PHONE_NUMBER"
+            className="text-cyan-400 hover:text-cyan-300 transition-colors underline decoration-cyan-400/30 hover:decoration-cyan-400"
+          >
+            +91 7876652128
+          </a>
+        </motion.div>
+
         {/* Social Links with Enhanced Design */}
         <motion.div
           initial={{ opacity: 0 }}
