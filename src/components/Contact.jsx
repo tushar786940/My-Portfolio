@@ -279,7 +279,7 @@ export default function Contact() {
         >
           or call me at{" "}
           <a
-            href="tel:+YOUR_PHONE_NUMBER"
+            href="tel:+91 7876652128"
             className="text-cyan-400 hover:text-cyan-300 transition-colors underline decoration-cyan-400/30 hover:decoration-cyan-400"
           >
             +91 7876652128
